@@ -1,4 +1,4 @@
-package computerdatabase;
+package io.gatling.computerdatabase.simulations;
 
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.*;
