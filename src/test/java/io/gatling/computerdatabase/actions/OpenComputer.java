@@ -39,7 +39,7 @@ public class OpenComputer {
                     return session.set(COMPUTER_URL.key(), computerUrl);
                 }
         ).exec(
-                OpenBrowser.on(String.format("#{%s} Page", computerName)).usingEndpoint("#{"+ COMPUTER_URL.key() +"}"),
+                OpenBrowser.on(String.format("#{%s} Page", computerName)).usingEndpoint(String.format("#{%s}", COMPUTER_URL.key())),
                 pause(ThinkTime.randomBetween(1, 2, ChronoUnit.SECONDS))
         );
     }
